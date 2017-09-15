@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The collector for everything">
+		<meta name="theme-color" content="#0097DB"/>
+		<title>Blue-Monkey</title>
+		<link rel="canonical" href="https://?"/>
+		<link rel="manifest" href="/manifest.json">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+		<script src="https://apis.google.com/js/platform.js"></script>
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script src="scripts/js.cookie.js"></script>
+		<script src="scripts/scripts.js"></script>
+	</head>
+	<body>
+	<div id="centrify">
+		<div id="header">
+			<div class="menubar">
+
+				<div id="mm_large">
+					<div class="mainlogo"></div>
+					<a href="/?pub" target="_self"><div class="mainmenu">Public lists</div></a>
+					<a href="/?priv" target="_self"><div class="mainmenu ownlists">Own lists</div></a>
+					<div class="btnNewItem" onclick="NewItem()"><span>Add&nbsp;item</span></div>
+					<div class="btnNewList" onclick="NewList()"><span>Add&nbsp;list</span></div>
+				</div>
+
+				<div id="mm_small">
+					<ul>
+						<label for="hamburger" class="hamburger_taptarget"></label>
+						<input type="checkbox" class="hamburger_checkbox" id="hamburger">
+						<li class="mainmenu">
+							<ul>
+								<li class="large"><a href="/?pub" target="_self">Public lists</a></li>
+								<li class="large ownlists"><a href="/?priv" target="_self">Own lists</a></li>
+								<li class="clear">&nbsp;</li>
+							</ul>
+							<div class="btnNewItem" onclick="NewItem()"><span>Add&nbsp;item</span></div>
+							<div class="btnNewList" onclick="NewList()"><span>Add&nbsp;list</span></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="login" id="sign-in">
+					<div id="customBtn" onclick="signIn();">
+						<span class="icon"></span><span class="buttonText">Anmelden</span>
+					</div>
+				</div>
+				<div class="login" id="sign-out">
+					<div id="customBtn" onclick="signOut();">
+						<span class="icon"></span><span class="buttonText">Abmelden</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="positioning">
+			<a href="" title="Add this link to your favorite bar to quick add items"><div id="quickadd">Add to [listname]</div></a>
+		    <div id="contentwrap"></div>
+		</div>
+		<script>
+			InitAuth();
+		</script>
+	</div>
+	</body>
+</html>

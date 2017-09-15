@@ -1,0 +1,19 @@
+<div class="Item" id="item0">
+	<form id="frmItem">
+		<input id="list0" name="list0" type="hidden" value="-1">
+		<input id="id0" name="id0" type="hidden" value="-1">
+		<div class="iMain" id="main0">
+			<div class="iLoader"></div>
+			<input id="link0" name="link0" type="text" placeholder="Enter url" onblur="get_img($(this).val())">
+			<input class="iButton" id="prev0" name="prev0" type="button" value="<" onclick="prevImage()">
+			<input id="image0" name="image0" type="text" placeholder="Enter image" onchange="change_bg($(this).val())">
+			<input class="iButton" id="next0" name="next0" type="button" value=">" onclick="nextImage()">
+		</div>
+		<div class="iTitle">
+			<input id="title0" name="title0" type="text" placeholder="Enter title">
+		</div>
+		<input class="iButton" id="delete0" name="delete0" type="button" value="Delete item" onclick="DeleteItem()">
+		<input class="iButton" id="cancel0" name="cancel0" type="button" value="&#x2716;" onclick="CancelItem()">
+		<input class="iButton" id="save0" name="save0" type="button" value="&#x2714;" onclick="SaveItem()">
+	</form>
+</div>

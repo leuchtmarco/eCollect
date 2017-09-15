@@ -1,0 +1,16 @@
+<div class="List" id="list0">
+	<form id="frmList">
+		<input id="hash0" name="hash0" type="hidden">
+		<input id="id0" name="id0" type="hidden" value="-1">
+		<input id="userid0" name="userid0" type="hidden">
+		<div class="lMain" id="main0"></div>
+		<div class="lTitle">
+			<input id="title0" name="title0" type="text" placeholder="Enter title">
+		</div>
+		<textarea class="lDesc" id="desc0" name="desc0" placeholder="Enter description"></textarea>
+		<label class="lPublic">Public:<input id="public0" name="public0" type="checkbox" value="1"></label>
+		<input class="lButton" id="delete0" name="delete0" type="button" value="Delete list" onclick="DeleteList()">
+		<input class="lButton" id="cancel0" name="cancel0" type="button" value="&#x2716;" onclick="CancelList()">
+		<input class="lButton" id="save0" name="save0" type="button" value="&#x2714;" onclick="SaveList()">
+	</form>
+</div>

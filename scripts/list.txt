@@ -1,0 +1,8 @@
+<div class="List" id="list0" onmouseenter="SelList(this, true)" onmouseleave="SelList(this, false)">
+	<div class="lEdit"><span>&#x2710;</span></div>
+	<a class="lLink" target="_self">
+		<div class="lMain"></div>
+		<div class="lTitle"></div>
+		<div class="lDesc"></div>
+	</a>
+</div>
